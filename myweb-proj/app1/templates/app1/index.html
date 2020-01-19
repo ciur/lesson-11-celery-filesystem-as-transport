@@ -1,0 +1,6 @@
+<form action="{% url 'index' %}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="doc_name">
+    <br />
+    <input type="submit" value="Process Doc" />
+</form>
